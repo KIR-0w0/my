@@ -1,0 +1,12 @@
+필요 JSP
+
+
+customer
+정은: cart / order / orderConfirm
+동건: list / detail
+태원: customerLoginForm / adminLoginForm / joinForm
+호원: main(header, footer, body) / mypage / search
+
+admin
+진혁: main(header,body)/ productMain/productInsert/productUpdate
+동규: main(header,body)/ customerMain/customerInfo/coustomerDetail/customerDelete
