@@ -11,6 +11,7 @@
 		<config>src/main/resources/context-di-demo2.xml</config>
 		<config>src/main/resources/context-di-demo3.xml</config>
 		<config>src/main/resources/context-di-demo4.xml</config>
+		<config>src/main/resources/context-di-demo5.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
