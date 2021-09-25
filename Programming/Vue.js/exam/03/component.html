@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue Compo!nent Registration</title>
+</head>
+<body>
+    <div id="app">
+        <h3>첫번째 인스턴스 영역</h3>
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>
+    </div>
+    <div id="app2">
+        <h3>두번째 인스턴스 영역</h3>
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>        
+    </div>
+    <script>
+        // 지역컴포넌트선언을 위한 변수 선언
+        var cmp = {
+            template: '<div>지역 컴포턴트가 등록되었습니다.</div>'
+        }
+        // 전역컴포넌트 등록
+        Vue.component('my-global-component', {
+            template: '<div>전역 컴포넌트가 등록되었습니다.'
+        })
+        // 지역컴포넌트 등록        
+        new Vue({
+            el: '#app',
+            components: {
+                'my-local-component': cmp
+            }
+        });
+        new Vue({
+            el: '#app2'
+        })
+    </script>
+</body>
+</html>
