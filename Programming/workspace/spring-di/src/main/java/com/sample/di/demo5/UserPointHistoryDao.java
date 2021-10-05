@@ -2,7 +2,7 @@ package com.sample.di.demo5;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository("demo5.UserPointHistoryDao")
 public class UserPointHistoryDao {
 
 	public void getPointHistory(String userId) {

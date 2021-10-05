@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sample" class="com.sample.di.demo8.Sample">
+		<property name="categories" >
+			<list>
+				<value>가전</value>
+				<value>주방</value>
+				<value>가구</value>
+				<value>잡화</value>
+			</list>
+		</property>
+	</bean>
+</beans>
